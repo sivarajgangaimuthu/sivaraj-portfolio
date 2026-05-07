@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Student AI search project preview</title>
+  <desc id="desc">Modern admin dashboard for student records with an AI search panel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#090b16"/>
+      <stop offset=".55" stop-color="#172033"/>
+      <stop offset="1" stop-color="#2a1d10"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#f8d57e"/>
+      <stop offset="1" stop-color="#4dd8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <circle cx="1010" cy="140" r="220" fill="#f8d57e" opacity=".12"/>
+  <circle cx="245" cy="670" r="240" fill="#4dd8ff" opacity=".1"/>
+  <rect x="126" y="104" width="1028" height="592" rx="32" fill="#08101c" opacity=".84" stroke="#ffffff" stroke-opacity=".14"/>
+  <text x="185" y="177" font-family="Inter, Arial" font-size="34" font-weight="800" fill="#ffffff">Student Records</text>
+  <rect x="185" y="220" width="540" height="66" rx="20" fill="#ffffff" opacity=".07"/>
+  <text x="224" y="262" font-family="Inter, Arial" font-size="20" font-weight="700" fill="#edf3ff">Ask: final year ECE students above 7 CGPA</text>
+  <rect x="760" y="220" width="330" height="66" rx="20" fill="url(#accent)" opacity=".9"/>
+  <text x="925" y="262" text-anchor="middle" font-family="Inter, Arial" font-size="20" font-weight="800" fill="#08101c">Gemini AI Search</text>
+  <rect x="185" y="335" width="905" height="72" rx="18" fill="#ffffff" opacity=".055"/>
+  <rect x="185" y="430" width="905" height="72" rx="18" fill="#ffffff" opacity=".08"/>
+  <rect x="185" y="525" width="905" height="72" rx="18" fill="#ffffff" opacity=".055"/>
+  <g font-family="Inter, Arial" font-size="18" fill="#edf3ff">
+    <text x="225" y="379" font-weight="800">Sivaraj G</text>
+    <text x="460" y="379" opacity=".72">ECE</text>
+    <text x="640" y="379" opacity=".72">CGPA 7.51</text>
+    <text x="880" y="379" fill="#8ff7d3" font-weight="800">Matched</text>
+    <text x="225" y="474" font-weight="800">Priya K</text>
+    <text x="460" y="474" opacity=".72">CSE</text>
+    <text x="640" y="474" opacity=".72">CGPA 8.20</text>
+    <text x="880" y="474" fill="#f8d57e" font-weight="800">Review</text>
+    <text x="225" y="569" font-weight="800">Arun M</text>
+    <text x="460" y="569" opacity=".72">ECE</text>
+    <text x="640" y="569" opacity=".72">CGPA 7.80</text>
+    <text x="880" y="569" fill="#8ff7d3" font-weight="800">Matched</text>
+  </g>
+  <path d="M1040 635c-76-22-132-68-168-139" stroke="#4dd8ff" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+  <circle cx="1040" cy="635" r="22" fill="#4dd8ff"/>
+</svg>

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #05070d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(77, 216, 255, 0.14), transparent 28rem),
+    radial-gradient(circle at 86% 16%, rgba(248, 213, 126, 0.13), transparent 24rem),
+    radial-gradient(circle at 72% 82%, rgba(255, 122, 182, 0.10), transparent 26rem),
+    #05070d;
+  color: #edf3ff;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent 82%);
+}
+
+body::after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background:
+    radial-gradient(circle at var(--cursor-x) var(--cursor-y), rgba(77, 216, 255, 0.13), transparent 15rem),
+    linear-gradient(180deg, rgba(5, 7, 13, 0.08), #05070d 92%);
+}
+
+::selection {
+  color: #031017;
+  background: #8ff7d3;
+}
+
+@layer components {
+  .glass-panel {
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.04)),
+      rgba(12, 18, 31, 0.66);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(22px);
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.055] px-3 py-1 text-sm font-medium text-cyanGlow;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-cyanGlow via-mintGlow to-goldGlow bg-clip-text text-transparent;
+  }
+
+  .focus-ring {
+    @apply outline-none ring-0 transition focus-visible:ring-2 focus-visible:ring-cyanGlow focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+  }
+}
+
+.cursor-glow {
+  position: fixed;
+  left: var(--cursor-x);
+  top: var(--cursor-y);
+  z-index: 50;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  border: 1px solid rgba(143, 247, 211, 0.52);
+  border-radius: 999px;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+  transition: width 160ms ease, height 160ms ease, opacity 160ms ease;
+}
+
+@media (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}

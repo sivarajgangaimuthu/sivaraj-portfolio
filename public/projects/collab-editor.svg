@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Collaborative editor project preview</title>
+  <desc id="desc">Dark editor dashboard with live cursors, presence chips, and realtime document panels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset=".5" stop-color="#111827"/>
+      <stop offset="1" stop-color="#10251f"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#4dd8ff"/>
+      <stop offset="1" stop-color="#8ff7d3"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <circle cx="178" cy="142" r="180" fill="#4dd8ff" opacity=".12"/>
+  <circle cx="1090" cy="640" r="220" fill="#8ff7d3" opacity=".11"/>
+  <rect x="120" y="100" width="1040" height="600" rx="34" fill="#07101d" opacity=".82" stroke="#ffffff" stroke-opacity=".14"/>
+  <rect x="120" y="100" width="1040" height="74" rx="34" fill="#ffffff" opacity=".06"/>
+  <circle cx="174" cy="137" r="10" fill="#ff7ab6"/>
+  <circle cx="205" cy="137" r="10" fill="#f8d57e"/>
+  <circle cx="236" cy="137" r="10" fill="#8ff7d3"/>
+  <rect x="175" y="225" width="210" height="410" rx="22" fill="#ffffff" opacity=".055"/>
+  <rect x="425" y="225" width="665" height="410" rx="22" fill="#05070d" opacity=".86" stroke="#ffffff" stroke-opacity=".08"/>
+  <rect x="460" y="270" width="250" height="14" rx="7" fill="url(#line)" opacity=".9"/>
+  <rect x="460" y="318" width="535" height="12" rx="6" fill="#ffffff" opacity=".18"/>
+  <rect x="460" y="356" width="455" height="12" rx="6" fill="#ffffff" opacity=".15"/>
+  <rect x="460" y="394" width="588" height="12" rx="6" fill="#ffffff" opacity=".18"/>
+  <rect x="460" y="432" width="360" height="12" rx="6" fill="#ffffff" opacity=".14"/>
+  <path d="M740 332v112" stroke="#4dd8ff" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M948 372v94" stroke="#ff7ab6" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+  <rect x="770" y="315" width="118" height="34" rx="17" fill="#4dd8ff" opacity=".92"/>
+  <text x="829" y="337" text-anchor="middle" font-family="Inter, Arial" font-size="16" font-weight="700" fill="#031017">Live edit</text>
+  <rect x="978" y="355" width="92" height="34" rx="17" fill="#ff7ab6" opacity=".92"/>
+  <text x="1024" y="377" text-anchor="middle" font-family="Inter, Arial" font-size="16" font-weight="700" fill="#13030b">User 2</text>
+  <rect x="205" y="263" width="140" height="18" rx="9" fill="#ffffff" opacity=".22"/>
+  <rect x="205" y="320" width="116" height="18" rx="9" fill="#4dd8ff" opacity=".72"/>
+  <rect x="205" y="377" width="156" height="18" rx="9" fill="#ffffff" opacity=".18"/>
+  <rect x="205" y="434" width="124" height="18" rx="9" fill="#8ff7d3" opacity=".72"/>
+  <rect x="205" y="554" width="118" height="42" rx="21" fill="#ffffff" opacity=".08"/>
+  <text x="264" y="581" text-anchor="middle" font-family="Inter, Arial" font-size="16" font-weight="700" fill="#edf3ff">Socket.IO</text>
+</svg>
